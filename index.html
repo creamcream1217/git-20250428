@@ -1,8 +1,115 @@
-<html>
+<!doctype html>
+<html lang="ko">
   <head>
-    <title>Git 특강 3차시</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유유성태 팀 소개</title>
+    <style>
+      /* Reset and base styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+        color: #333;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #ffffffcc;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+      }
+
+      .team-name {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #2c3e50;
+      }
+
+      .member-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .member-item {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+        text-align: center;
+      }
+
+      .member-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .member-item a {
+        text-decoration: none;
+        color: #2980b9;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 20px;
+        }
+
+        .team-name {
+          font-size: 28px;
+        }
+
+        .member-item a {
+          font-size: 18px;
+        }
+      }
+    </style>
   </head>
   <body>
+
+    <div class="container">
+      <div class="team-name">팀 이름: 유유성태</div>
+      <div class="member-list" id="team-members"></div>
+    </div>
+
+<!--     <script>
+      const teamMembers = [
+        { name: '김태영', pageLink: 'TeamIntro/taeyoung.html' },
+        { name: '김성학', pageLink: 'TeamIntro/hak.html' },
+        { name: '이유민', pageLink: 'TeamIntro/yumin.html' },
+      ];
+
+      const membersContainer = document.getElementById('team-members');
+
+      teamMembers.forEach((member) => {
+        const memberDiv = document.createElement('div');
+        memberDiv.className = 'member-item';
+        memberDiv.innerHTML = `<a href="${member.pageLink}">${member.name}</a>`;
+        membersContainer.appendChild(memberDiv);
+      });
+    </script> -->
+
+    <p>팀이름: 비대면 팀1(17회차)</p>
+    <p>팀원목록: 류세민, 우현서, 김선영, 박주용</p>
+    <ul>
+      <li>
+        <a href="https://ryusemin.github.io/0428repo">자기소개 페이지</a>
+      </li>
+    </ul>
     <a href="https://creamcream1217.github.io/git-20250428/index.html"
       ><p>Home</p></a
     >
@@ -12,5 +119,34 @@
     <a href="https://github.com/kb-git-ex/git-3week.git"><p>7</p></a>
     <a href="https://khyej.github.io/git-test/"><p>13</p></a>
     <a href="https://guno-p.github.io/git-20250428-teamPJ/"><p>전공12반 TEAM AAA</p></a>
+    <a href="https://minuuuuuuuuuuuu.github.io/ityl-git-hell/"><p>ityl-git-hell</p></a>
+    <h4>팀 이름 : 🍱 14회차 도시락 🍱</h4>
+    <h4>팀원 목록 :</h4>
+    <ul>
+      <li>🍋김선희🍋</li>
+      <li>🍑노채연🍑</li>
+      <li>🥑유지민🥑</li>
+      <li>🍇박소현🍇</li>
+    </ul>
+    <h4>
+      소개사이트 링크 :
+      <a href="https://urjimyu.github.io/My-Name/">소개 링크로</a>
+    </h4>
+    <h4>자랑하고 싶은 점 : 협동 짱! 분위기 짱! 열정 짱!</h4>
   </body>
 </html>
+
+<style scoped>
+  body {
+    padding: 10;
+  }
+  ul {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+  }
+  h4 {
+    padding: 5;
+    margin: 0;
+  }
+</style>
